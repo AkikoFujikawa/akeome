@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝你生日快樂！</title>
+    <style>
+        /* 全体の基本設定 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+            background-color: #87ceeb; /* 背景色：スカイブルー */
+            color: #333333; /* 文字色：見やすい濃いグレー */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* メインのカード容器 */
+        .birthday-card {
+            max-width: 600px;
+            width: 100%;
+            background: #fdfbf7; /* 枠内：白ベースの温かみのあるクリーム色 */
+            border: 1px solid #e2e8f0; 
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 画像エリア */
+        .image-area {
+            width: 100%;
+            line-height: 0;
+        }
+
+        .image-area img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* テキストコンテンツエリア */
+        .content-area {
+            padding: 40px 30px;
+            text-align: center;
+            background: #fdfbf7;
+        }
+
+        /* タイトル */
+        .main-title {
+            font-size: 2.2rem;
+            color: #1e3a8a; /* クリーム色に映える濃いめのブルー */
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #64748b; 
+            font-weight: bold;
+            margin-bottom: 25px;
+            letter-spacing: 4px;
+        }
+
+        /* 区切り線 */
+        .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #3b82f6; /* 爽やかなブルーのアクセント */
+            margin: 0 auto 25px;
+        }
+
+        /* メッセージ本文 */
+        .message {
+            font-size: 1.05rem;
+            line-height: 2;
+            color: #475569; 
+            font-weight: 400;
+        }
+
+        /* スマホ向けの微調整 */
+        @media (max-width: 480px) {
+            .main-title { font-size: 1.8rem; }
+            .subtitle { font-size: 0.9rem; }
+            .message { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="birthday-card">
+        <div class="image-area">
+            <!-- 【変更点】実際のファイル名に合わせて修正しました -->
+            <img src="catSinging.jpg" alt="台北の夜市で歌う猫ちゃん">
+        </div>
+
+        <div class="content-area">
+            <h1 class="main-title">祝你生日快樂</h1>
+            <p class="subtitle">HAPPY BIRTHDAY</p>
+            
+            <div class="divider"></div>
+            
+            <p class="message">
+                お誕生日おめでとう！<br>
+                充実した楽しい1年になりますように。<br>
+                体に気をつけて、自分らしく。<br>
+                これからの1年も応援しています。
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
